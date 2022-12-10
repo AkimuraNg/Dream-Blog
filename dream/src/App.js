@@ -21,7 +21,7 @@ function App() {
                 <a class="nav-link active" href="#scrollspyAbout">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="#scrollspyFeats">Post</a>
+                <a class="nav-link active" href="#scrollspyFeats">Features</a>
               </li>
             </ul>
 
