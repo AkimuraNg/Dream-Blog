@@ -24,8 +24,25 @@ p {
 main {
   min-height: 100vh;
 }
+/*Button*/
+button{
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 5px;
+  font-size: 32px;
+  height: 130px;
+  width: 130px;
+  box-shadow: 0 2px 4px white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
 
-
+button:active {
+  background-color: white;
+  box-shadow: 0 0 2px black;
+  transform: translateY(2px);
+}
 
 /*Navbar*/
 .bg-dark {
@@ -54,6 +71,7 @@ main {
 /*Card*/
 .card {
   padding: 20px 20px;
+  margin: 0 16px;
   background: black;
   border: 4px solid white;
 }
@@ -64,3 +82,4 @@ main {
   padding: 40px 28px;
   text-align: center;
 }
+

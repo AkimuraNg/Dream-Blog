@@ -1,7 +1,8 @@
 import './App.css';
 import Home from './components/Home';
 
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Link } from 'react-router-dom';
+import Blog from './components/Blog';
 
 function App() {
 
@@ -18,7 +19,7 @@ function App() {
           <div class="collapse navbar-collapse" id="navbarContent">
             <ul class="navbar-nav justify-content-center mx-auto">
               <li class="nav-item">
-                <a class="nav-link active" href="#scrollspyHome">Home</a>
+                <Link class="nav-link active" href="#scrollspyHome" to="/">Home</Link>
               </li>
               <li class="nav-item">
                 <a class="nav-link active" href="#scrollspyAbout">About</a>
@@ -36,6 +37,7 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home />}></Route>
+        <Route path="/blog" element={<Blog />}></Route>
       </Routes>
 
 
