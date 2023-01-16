@@ -1,4 +1,5 @@
 import React from 'react'
+import plus from './images/plus-circle.svg'
 
 const Blog = () => {
     return (
@@ -27,7 +28,7 @@ const Blog = () => {
                </section>
 
                <button style={{borderRadius: "70%"}}>
-                    Add New
+                    <img src={plus} alt="plus"/>
                </button>
             </main>
         </div>
