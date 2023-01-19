@@ -1,5 +1,5 @@
 import React from 'react'
-import plus from './images/plus-circle.svg'
+// import plus from './images/plus-circle.svg'
 
 const Blog = () => {
     return (
@@ -9,9 +9,12 @@ const Blog = () => {
                     <h1>Blog Page</h1>
                     <p>Here you can view other stories and publish your own.</p>
                </section>
-               <section style={{display: 'flex'}}>
+               <section style={{display: 'flex', paddingTop: 20}}>
                     <div className="card" style={{width: '18rem'}}>
 
+                    </div>
+                    <div className="card" style={{width: '18rem'}}>
+                        
                     </div>
                     <div className="card" style={{width: '18rem'}}>
                         
@@ -27,9 +30,9 @@ const Blog = () => {
                     </div>
                </section>
 
-               <button style={{borderRadius: "70%"}}>
+               {/* <button style={{borderRadius: "70%"}}>
                     <img src={plus} alt="plus"/>
-               </button>
+               </button> */}
             </main>
         </div>
     )

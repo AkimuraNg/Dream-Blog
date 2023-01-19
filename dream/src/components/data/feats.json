@@ -1,22 +1,17 @@
 [
     {
         "title": "Just a normal blog",
-        "content": "You can read people stories.",
-        "image": "https://cdn-icons-png.flaticon.com/512/3352/3352475.png"
-    },
-    {
-        "title": "Feature 2",
-        "content": "Will be added later",
-        "image": ""
+        "content": "You can read others stories and upload your own post.",
+        "image": "https://cdn1.iconfinder.com/data/icons/journalism-and-news-2/512/Journalism-17-512.png"
     },
     {
         "title": "You are the author",
-        "content": "You compose your own stories from dreams and nightmares.",
-        "image": ""
+        "content": "You compose your own stories from your own experiences through dreaming.",
+        "image": "https://cdn2.iconfinder.com/data/icons/hand-conversation/91/Hand_53-512.png"
     },
     {
-        "title": "Stay anonymous",
+        "title": "Stay incognito",
         "content": "Nobody will know who you are.",
-        "image": ""
+        "image": "https://cdn4.iconfinder.com/data/icons/clothes-41/68/incognito_detective_fedora_glasses_undercover_fashion-512.png"
     }
 ]
