@@ -1,7 +1,25 @@
 .App {
   /* text-align: center; */
-  background: black;
   font-family: 'Itim', cursive;
+}
+
+#light{
+  background-color: white;
+}
+
+#dark{
+  background-color: black;
+}
+#light main{
+  color: black;
+}
+#light a{
+  color: black;
+}
+#dark main{
+  color: white;
+}
+#dark a{
   color: white;
 }
 
@@ -46,7 +64,7 @@ button:active {
 
 /*Navbar*/
 .bg-dark {
-  background: black !important
+  background-color: black !important
 }
 
 .nav-link {
@@ -60,6 +78,9 @@ button:active {
 .nav-item {
   font-size: 20px;
 }
+#light .bg-dark{
+  background-color: white !important;
+}
 
 /*Home page*/
 .featItems {
@@ -69,18 +90,55 @@ button:active {
 }
 
 /*Card*/
-.card {
+.featItems .card {
   padding: 20px 20px;
   margin: 0 16px;
-  background: white;
+  background-color: white;
   border: 4px solid white;
 }
-.card-title, .card-text{
+#light .card{
+  border: 4px solid black;
+}
+.featItems .card-title, .card-text{
   color: black
 }
 .card-img{
   align-self: center;
   width: 40%
+}
+
+/*Blog*/
+.blogHead{
+  padding: 500px 80px
+}
+.blogItems{
+  padding: 100px 80px
+}
+.blogItems .card{
+  background-color: black; 
+  border: 2px solid white;
+  padding: 20px 20px;
+  margin: 20px 20px;
+  width: 56rem;
+}
+.blogItems .card .card-text{
+  color: white;
+}
+
+#light .btn{
+  border: 2px solid black
+}
+#light .card{
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+}
+#light .blogItems .card .card-text{
+  color: black
+}
+#dark .btn{
+  background-color: white;
+  color: black;
 }
 
 /*Footer*/
@@ -89,4 +147,35 @@ button:active {
   padding: 40px 28px;
   text-align: center;
 }
+#dark .footer{
+  color: white;
+}
+.switch{
+  margin-left: 40px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+label{
+  margin: 10px;
+}
+#dark label{
+  color: white;
+}
 
+@media only screen and (max-width: 600px) {
+  /*Blog*/
+  .Blog{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .blogHead{
+    padding: 100px 0px;
+  }
+  .blogItems{
+    padding: 0px 0px
+  }
+  .blogItems .card{
+    width: 100%;
+  }
+}

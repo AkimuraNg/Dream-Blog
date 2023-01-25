@@ -20,7 +20,7 @@ const Home = () => {
 
           <div style={{ display: 'flex' }}>
             <div>
-              <h4 style={{ paddingBottom: 28 }}>Have you ever dream about something very good, very fantastic, very nostalgic,...?
+              <h4 style={{ paddingBottom: 28}}>Have you ever dream about something very good, very fantastic, very nostalgic,...?
                 <br />Have you ever want to share your dreams to everyone but to shy to share with them?
                 <br /> Then this website is for you! </h4>
               <p>Introducing 'Dream blog'. A webpage where you can share you dream with others without having to revealing yourself.
@@ -54,8 +54,7 @@ const Home = () => {
             })}
           </div>
 
-          <Link to="/blog" style={{
-            color: 'white',
+          <Link to="/blog" style={{ 
             display: 'flex',
             justifyContent: 'center',
             fontSize: '28px',
