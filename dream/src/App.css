@@ -4,7 +4,7 @@
 }
 
 #light{
-  background-color: white;
+  background-color: whitesmoke;
 }
 
 #dark{
@@ -17,10 +17,10 @@
   color: black;
 }
 #dark main{
-  color: white;
+  color: whitesmoke;
 }
 #dark a{
-  color: white;
+  color: whitesmoke;
 }
 
 h1 {
@@ -44,25 +44,31 @@ main {
 }
 /*Button*/
 button{
-  background-color: white;
+  background-color: whitesmoke;
   color: black;
   border: none;
   padding: 6px;
   font-size: 10px;
   height: 50px;
   width: 50px;
-  box-shadow: 0 2px 4px white;
+  box-shadow: 0 2px 4px whitesmoke;
   cursor: pointer;
   transition: all 0.2s ease;
 }
 
 button:active {
-  background-color: white;
+  background-color: whitesmoke;
   box-shadow: 0 0 2px black;
   transform: translateY(4px);
 }
 
 /*Navbar*/
+#dark .navbar-dark .navbar-toggler-icon{
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+}
+#light .navbar-dark .navbar-toggler-icon{
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+}
 .bg-dark {
   background-color: black !important
 }
@@ -79,22 +85,42 @@ button:active {
   font-size: 20px;
 }
 #light .bg-dark{
-  background-color: white !important;
+  background-color: whitesmoke !important;
+}
+#light .navbar-toggler{
+  color: black !important
+}
+#light span{
+  color: black !important
 }
 
 /*Home page*/
+.aboutSection{
+  padding: 80px 40px;
+}
 .featItems {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-evenly;
 }
+.content{
+  display: flex;
+  flex-wrap: nowrap;
+}
+.coverImage{
+  padding-left: 40px;
+  width: 50%;
+}
 
 /*Card*/
+.featT{
+  margin-right: 20px;
+}
 .featItems .card {
   padding: 20px 20px;
   margin: 0 16px;
-  background-color: white;
-  border: 4px solid white;
+  background-color: whitesmoke;
+  border: 4px solid whitesmoke;
 }
 #light .card{
   border: 4px solid black;
@@ -116,20 +142,20 @@ button:active {
 }
 .blogItems .card{
   background-color: black; 
-  border: 2px solid white;
+  border: 2px solid whitesmoke;
   padding: 20px 20px;
   margin: 20px 20px;
   width: 56rem;
 }
 .blogItems .card .card-text{
-  color: white;
+  color: whitesmoke;
 }
 
 #light .btn{
   border: 2px solid black
 }
 #light .card{
-  background-color: white;
+  background-color: whitesmoke;
   color: black;
   border: 2px solid black;
 }
@@ -137,7 +163,7 @@ button:active {
   color: black
 }
 #dark .btn{
-  background-color: white;
+  background-color: whitesmoke;
   color: black;
 }
 
@@ -148,7 +174,7 @@ button:active {
   text-align: center;
 }
 #dark .footer{
-  color: white;
+  color: whitesmoke;
 }
 .switch{
   margin-left: 40px;
@@ -160,10 +186,39 @@ label{
   margin: 10px;
 }
 #dark label{
-  color: white;
+  color: whitesmoke;
 }
 
 @media only screen and (max-width: 600px) {
+  /*Home page*/
+  .aboutSection{
+    padding: 40px 0px;
+  }
+  .content{
+    display: block;
+  }
+  .coverImage{
+    padding-left: 0px;
+    width: 100%
+  }
+
+  /*Card*/
+  .featT{
+    margin-right: 0px;
+  }
+  .featItems{
+    display: block;
+    padding: 40px 0px;
+  }
+  .featItems .card{
+    margin: 20px 0px;
+  }
+  .card-img{
+    width: 30%
+  }
+  .link{
+    margin-right: 20px;
+  }
   /*Blog*/
   .Blog{
     display: flex;
