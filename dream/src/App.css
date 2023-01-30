@@ -116,14 +116,17 @@ button:active {
 .featT{
   margin-right: 20px;
 }
+.featItems{
+  padding-top: 40px;
+}
 .featItems .card {
   padding: 20px 20px;
   margin: 0 16px;
   background-color: whitesmoke;
   border: 4px solid whitesmoke;
 }
-#light .card{
-  border: 4px solid black;
+#light .featItems .card{
+  border: none;
 }
 .featItems .card-title, .card-text{
   color: black
@@ -142,7 +145,7 @@ button:active {
 }
 .blogItems .card{
   background-color: black; 
-  border: 2px solid whitesmoke;
+  /* border: 2px solid whitesmoke; */
   padding: 20px 20px;
   margin: 20px 20px;
   width: 56rem;
@@ -154,10 +157,10 @@ button:active {
 #light .btn{
   border: 2px solid black
 }
-#light .card{
+#light .blogItems .card{
   background-color: whitesmoke;
   color: black;
-  border: 2px solid black;
+  border: none
 }
 #light .blogItems .card .card-text{
   color: black
