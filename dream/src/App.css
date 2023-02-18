@@ -138,17 +138,25 @@ button:active {
 
 /*Blog*/
 .blogHead{
-  padding: 500px 80px
+  padding-top: 120px;
+  padding-left: 40px;
 }
+
 .blogItems{
-  padding: 100px 80px
+  text-align: center;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  flex-direction: row;
+  padding: 100px 0px
 }
+/* 
 .blogItems .card{
   background-color: black; 
-  /* border: 2px solid whitesmoke; */
+  border: 2px solid whitesmoke;
   padding: 20px 20px;
   margin: 20px 20px;
-  width: 56rem;
+  width: 100%;
 }
 .blogItems .card .card-text{
   color: whitesmoke;
@@ -168,7 +176,7 @@ button:active {
 #dark .btn{
   background-color: whitesmoke;
   color: black;
-}
+} */
 
 /*Footer*/
 .footer {
