@@ -144,11 +144,32 @@ button:active {
 
 .blogItems{
   text-align: center;
+  padding: 100px 0px
+}
+
+.lists{
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-evenly;
   flex-direction: row;
-  padding: 100px 0px
+}
+
+.blog-preview{
+  padding: 10px 16px;
+  margin: 20px 0px;
+  border-bottom: 1px solid black;
+  cursor: pointer;
+}
+
+.blog-preview:hover{
+  box-shadow: 1px 3px 5px whitesmoke;
+}
+
+#light .blog-preview{
+  border-bottom: 1px solid whitesmoke;
+}
+#light .blog-preview:hover{
+  box-shadow: 1px 3px 5px black;
 }
 /* 
 .blogItems .card{
