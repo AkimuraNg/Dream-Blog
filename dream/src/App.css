@@ -95,21 +95,26 @@ button:active {
 }
 
 /*Home page*/
-.aboutSection{
-  padding: 80px 40px;
+.introSection{
+  display: flex;
+  justify-content: space-between;
+  padding: 120px 0px;
 }
+/* .aboutSection{
+  padding: 80px 40px;
+} */
 .featItems {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-evenly;
 }
 .content{
-  display: flex;
-  flex-wrap: nowrap;
+ padding: 200px 100px;
+ text-align: left;
 }
 .coverImage{
-  padding-left: 40px;
-  width: 50%;
+  padding-right: 80px;
+  width: 60%;
 }
 
 /*Card*/

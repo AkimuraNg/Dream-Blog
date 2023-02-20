@@ -9,18 +9,23 @@ const Home = () => {
 
         {/* Intro view */}
         <section style={{ paddingTop: 80, textAlign: 'center' }} id="scrollspyHome" className="introSection" data-bs-spy="scroll" data-bs-target="#navbarContent" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" tabindex="-1">
-          <h1>Your stories are made from dreams</h1>
-          <img style={{ width: "64%" }} className="coverImage" src="https://images.ctfassets.net/cnu0m8re1exe/2oqTSOy7fSYIQwxnHWs2SJ/a248fbc8289b460bf564f0f6b3bb8859/shutterstock_1842970219.jpg?fm=jpg&fl=progressive&w=660&h=433&fit=fill" alt="Cover" />
+          <div className="row">
+            <div className="content">
+              <h1>Craft your stories from dreams</h1>
+              <h5>Dream Blogs encourage your imagination, your dream and help you compose your own stories.</h5>
+            </div>
+          </div>
+          <img className="coverImage" src="https://images.ctfassets.net/cnu0m8re1exe/2oqTSOy7fSYIQwxnHWs2SJ/a248fbc8289b460bf564f0f6b3bb8859/shutterstock_1842970219.jpg?fm=jpg&fl=progressive&w=660&h=433&fit=fill" alt="Cover" />
         </section>
 
         {/* About view */}
-        <section style={{ textAlign: 'left' }} id="scrollspyAbout" className="aboutSection" data-bs-spy="scroll" data-bs-target="#navbarContent" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" tabindex="-1">
+        {/* <section style={{ textAlign: 'left' }} id="scrollspyAbout" className="aboutSection" data-bs-spy="scroll" data-bs-target="#navbarContent" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" tabindex="-1">
 
           <h1 style={{ paddingBottom: 20 }}>About the Website</h1>
 
           <div className="content">
             <div>
-              <h4 style={{ paddingBottom: 28}}>Have you ever dream about something very good, very fantastic, very nostalgic,...?
+              <h4 style={{ paddingBottom: 28 }}>Have you ever dream about something very good, very fantastic, very nostalgic,...?
                 <br />Have you ever want to share your dreams to everyone but to shy to share with them?
                 <br /> Then this website is for you! </h4>
               <p>Introducing 'Dream blog'. A webpage where you can share you dream with others without having to revealing yourself.
@@ -29,7 +34,7 @@ const Home = () => {
             <img className="coverImage" src="https://images.ctfassets.net/cnu0m8re1exe/61ygSbULPkXT6xR4zHmHc5/94c9a30f1ba6cd05edef3c953947d9a0/dreamstate.jpg?fm=jpg&fl=progressive&w=660&h=433&fit=fill" alt="cover2" />
           </div>
 
-        </section>
+        </section> */}
 
         {/* Features view */}
         <section style={{ textAlign: 'right' }} id="scrollspyFeats" className="featuresSection" data-bs-spy="scroll" data-bs-target="#navbarContent" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true">
@@ -50,7 +55,7 @@ const Home = () => {
             })}
           </div>
 
-          <Link to="/blog" className="link" style={{ 
+          <Link to="/blog" className="link" style={{
             display: 'flex',
             justifyContent: 'center',
             fontSize: '28px',
