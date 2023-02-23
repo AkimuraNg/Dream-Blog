@@ -1,17 +1,32 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import { Link } from 'react-router-dom'
 import plus from './images/plus-circle.svg'
-import { useState } from 'react'
 import Lists from './data/Lists'
 
 
 const Blog = () => {
 
-    const [blogs, setBlogs] = useState([
-        { title: 'Blog 1', body: 'Lorem Ipsum...', author: 'anonymous', id: 1 },
-        { title: 'Blog 2', body: 'Lorem Ipsum...', author: 'anonymous', id: 2 },
-        { title: 'Blog 3', body: 'Lorem Ipsum...', author: 'anonymous', id: 3 }
-    ])
+    // const [blogs, setBlogs] = useState([
+    //     { title: 'Blog 1', body: 'Lorem Ipsum...', author: 'anonymous', id: 1 },
+    //     { title: 'Blog 2', body: 'Lorem Ipsum...', author: 'anonymous', id: 2 },
+    //     { title: 'Blog 3', body: 'Lorem Ipsum...', author: 'anonymous', id: 3 }
+    // ])
+    const [blogs, setBlogs] = useState(null)
+
+    // const handleDelete = (id) =>{
+    //     const newBlog = blogs.filter(blog => blog.id !== id)
+    //     setBlogs(newBlog);
+    // }
+
+    useEffect(() => {
+        fetch('http://localhost:8000/blogs')
+            .then(res =>{
+                return res.json()
+            })
+            .then(data => {
+                setBlogs(data)
+            })
+    }, [])
 
     return (
         <div className="container-fluid">
@@ -27,24 +42,10 @@ const Blog = () => {
                     </section>
 
                     <section className="blogItems">
-                        <Lists blogs={blogs}/>
+                        {blogs && <Lists blogs={blogs} />} 
+                        {/* handleDelete={handleDelete} */}
                     </section>
-                    {/* <section className="blogItems">
-                        <div className="card">
-                            <div className="card-body" style={{ textAlign: 'center' }}>
-                                <h4 className="card-title"> Some title</h4>
-                                <p className="card-text">Some paragraph</p>
-                            </div>
-                            <button className="btn" style={{ width: '40%', alignSelf: 'center' }}>Read More</button>
-                        </div>
-
-                        
-                    </section> */}
                 </div>
-
-                {/* <button style={{borderRadius: "70%"}}>
-                    <img src={plus} alt="plus"/>
-               </button> */}
             </main>
         </div>
     )
