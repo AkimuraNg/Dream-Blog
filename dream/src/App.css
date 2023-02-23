@@ -51,17 +51,33 @@ button{
   font-size: 10px;
   height: 50px;
   width: 50px;
-  box-shadow: 0 2px 4px whitesmoke;
+  box-shadow: 1px solid whitesmoke;
   cursor: pointer;
   transition: all 0.2s ease;
+}
+.btn-primary{
+  background-color: whitesmoke;
 }
 
 button:active {
   background-color: whitesmoke;
   box-shadow: 0 0 2px black;
-  transform: translateY(4px);
+  transform: translateY(2px);
 }
 
+.btn-primary:active{
+  background-color: whitesmoke;
+  box-shadow: 0 0 2px black;
+  transform: translateY(2px);
+}
+
+.btn-primary:hover{
+  background-color: whitesmoke;
+}
+
+#light .btn-primary{
+  border: 2px solid black
+}
 /*Navbar*/
 #dark .navbar-dark .navbar-toggler-icon{
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
@@ -148,7 +164,7 @@ button:active {
 }
 
 .blogItems{
-  text-align: center;
+  /* text-align: center; */
   padding: 100px 0px
 }
 
@@ -160,49 +176,36 @@ button:active {
 }
 
 .blog-preview{
+  border: 2px solid whitesmoke;
+  border-radius: 8px;
   padding: 10px 16px;
   margin: 20px 0px;
-  border-bottom: 1px solid black;
+  /* border-bottom: 1px solid black; */
   cursor: pointer;
+  width: 24rem
 }
 
 .blog-preview:hover{
   box-shadow: 1px 3px 5px whitesmoke;
 }
 
+.btnGroup{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  margin: 10px 20px;
+}
+
+
 #light .blog-preview{
-  border-bottom: 1px solid whitesmoke;
+  border: 2px solid black;
 }
 #light .blog-preview:hover{
   box-shadow: 1px 3px 5px black;
 }
-/* 
-.blogItems .card{
-  background-color: black; 
-  border: 2px solid whitesmoke;
-  padding: 20px 20px;
-  margin: 20px 20px;
-  width: 100%;
+#light .fBtn{
+  border: 2px solid black;
 }
-.blogItems .card .card-text{
-  color: whitesmoke;
-}
-
-#light .btn{
-  border: 2px solid black
-}
-#light .blogItems .card{
-  background-color: whitesmoke;
-  color: black;
-  border: none
-}
-#light .blogItems .card .card-text{
-  color: black
-}
-#dark .btn{
-  background-color: whitesmoke;
-  color: black;
-} */
 
 /*Footer*/
 .footer {

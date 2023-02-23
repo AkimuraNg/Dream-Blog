@@ -27,14 +27,14 @@ function App() {
             <div className="collapse navbar-collapse" id="navbarContent">
               <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                 <li className="nav-item">
-                  <Link className="nav-link active" href="#scrollspyHome" to="/">Home</Link>
+                  <Link className="nav-link active" to="/">Home</Link>
                 </li>
-                <li className="nav-item">
+                {/* <li className="nav-item">
                   <a className="nav-link active" href="#scrollspyAbout">About</a>
-                </li>
-                <li className="nav-item">
+                </li> */}
+                {/* <li className="nav-item">
                   <a className="nav-link active" href="#scrollspyFeats">Features</a>
-                </li>
+                </li> */}
                 <li className="nav-item">
                   <Link className="nav-link active" to="/blog">Blog</Link>
                 </li>
@@ -55,10 +55,6 @@ function App() {
           <Route path="/blog" element={<Blog />}></Route>
           <Route path="/create" element={<AddNew />}></Route>
         </Routes>
-
-
-
-
 
         {/* Footer */}
         <footer className="footer">

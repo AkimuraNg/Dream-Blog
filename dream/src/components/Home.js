@@ -8,7 +8,7 @@ const Home = () => {
       <main className="wrapper" >
 
         {/* Intro view */}
-        <section style={{ paddingTop: 80, textAlign: 'center' }} id="scrollspyHome" className="introSection" data-bs-spy="scroll" data-bs-target="#navbarContent" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" tabindex="-1">
+        <section style={{ paddingTop: 80, textAlign: 'center' }} className="introSection">
           <div className="row">
             <div className="content">
               <h1>Craft your stories from dreams</h1>
@@ -19,7 +19,7 @@ const Home = () => {
         </section>
 
         {/* About view */}
-        {/* <section style={{ textAlign: 'left' }} id="scrollspyAbout" className="aboutSection" data-bs-spy="scroll" data-bs-target="#navbarContent" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" tabindex="-1">
+        {/* <section style={{ textAlign: 'left' }} id="scrollspyAbout" className="aboutSection">
 
           <h1 style={{ paddingBottom: 20 }}>About the Website</h1>
 
@@ -37,7 +37,7 @@ const Home = () => {
         </section> */}
 
         {/* Features view */}
-        <section style={{ textAlign: 'right' }} id="scrollspyFeats" className="featuresSection" data-bs-spy="scroll" data-bs-target="#navbarContent" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true">
+        <section style={{ textAlign: 'right' }}  className="featuresSection" >
           <h1 className="featT">Website Features</h1>
           <h4 className="featT">Here are some features that the website currently supports</h4>
           {/* Card views */}
