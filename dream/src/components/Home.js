@@ -1,10 +1,15 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Navbar from './Navbar'
 import feats from './data/feats.json'
+import Footer from './Footer'
 
 const Home = () => {
   return (
     <div className="container-fluid">
+
+      <Navbar/>
+      
       <main className="wrapper" >
 
         {/* Intro view */}
@@ -56,6 +61,7 @@ const Home = () => {
           </div>
 
           <Link to="/blog" className="link" style={{
+            color: 'whitesmoke',
             display: 'flex',
             justifyContent: 'center',
             fontSize: '28px',
@@ -66,6 +72,7 @@ const Home = () => {
 
         </section>
       </main>
+      <Footer/>
     </div>
   )
 }
