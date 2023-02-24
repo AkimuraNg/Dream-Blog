@@ -2,6 +2,8 @@ import React, {useState, useEffect} from 'react'
 import { Link } from 'react-router-dom'
 import plus from './images/plus-circle.svg'
 import Lists from './data/Lists'
+import Navbar from './Navbar'
+import Footer from './Footer'
 
 
 const Blog = () => {
@@ -11,7 +13,8 @@ const Blog = () => {
     //     { title: 'Blog 2', body: 'Lorem Ipsum...', author: 'anonymous', id: 2 },
     //     { title: 'Blog 3', body: 'Lorem Ipsum...', author: 'anonymous', id: 3 }
     // ])
-    const [blogs, setBlogs] = useState(null)
+    const [blogs, setBlogs] = useState(null);
+    
 
     // const handleDelete = (id) =>{
     //     const newBlog = blogs.filter(blog => blog.id !== id)
@@ -19,7 +22,7 @@ const Blog = () => {
     // }
 
     useEffect(() => {
-        fetch('http://localhost:8000/blogs')
+        fetch('http://localhost:3002/blogs')
             .then(res =>{
                 return res.json()
             })
@@ -30,6 +33,7 @@ const Blog = () => {
 
     return (
         <div className="container-fluid">
+            <Navbar/>
             <main className="wrapper">
                 <div className="Blog">
                     <section className="blogHead" style={{ textAlign: 'center' }}>
@@ -47,6 +51,7 @@ const Blog = () => {
                     </section>
                 </div>
             </main>
+            <Footer/>
         </div>
     )
 }
