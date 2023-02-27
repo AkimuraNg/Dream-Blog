@@ -1,39 +1,24 @@
-import React, {useState, useEffect} from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import plus from './images/plus-circle.svg'
 import Lists from './data/Lists'
 import Navbar from './Navbar'
 import Footer from './Footer'
+import useFetch from './useFetch'
 
 
 const Blog = () => {
 
-    // const [blogs, setBlogs] = useState([
-    //     { title: 'Blog 1', body: 'Lorem Ipsum...', author: 'anonymous', id: 1 },
-    //     { title: 'Blog 2', body: 'Lorem Ipsum...', author: 'anonymous', id: 2 },
-    //     { title: 'Blog 3', body: 'Lorem Ipsum...', author: 'anonymous', id: 3 }
-    // ])
-    const [blogs, setBlogs] = useState(null);
+    const {data : blogs, isPending, error} = useFetch('http://localhost:3002/blogs')
     
-
     // const handleDelete = (id) =>{
     //     const newBlog = blogs.filter(blog => blog.id !== id)
     //     setBlogs(newBlog);
     // }
 
-    useEffect(() => {
-        fetch('http://localhost:3002/blogs')
-            .then(res =>{
-                return res.json()
-            })
-            .then(data => {
-                setBlogs(data)
-            })
-    }, [])
-
     return (
         <div className="container-fluid">
-            <Navbar/>
+            <Navbar />
             <main className="wrapper">
                 <div className="Blog">
                     <section className="blogHead" style={{ textAlign: 'center' }}>
@@ -46,12 +31,14 @@ const Blog = () => {
                     </section>
 
                     <section className="blogItems">
-                        {blogs && <Lists blogs={blogs} />} 
+                        {error && <h3>{error}</h3>}
+                        {isPending && <h3>Loading...</h3>}
+                        {blogs && <Lists blogs={blogs} />}
                         {/* handleDelete={handleDelete} */}
                     </section>
                 </div>
             </main>
-            <Footer/>
+            <Footer />
         </div>
     )
 }
