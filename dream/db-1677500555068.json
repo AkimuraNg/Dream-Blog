@@ -1,0 +1,16 @@
+{
+  "blogs": [
+    {
+      "title": "Test blog 1",
+      "body": "Testing Json server",
+      "author": "anonymous 1",
+      "id": 1
+    },
+    {
+      "title": "Test blog 2",
+      "body": "Testing Json server",
+      "author": "anonymous 2",
+      "id": 2
+    }
+  ]
+}
