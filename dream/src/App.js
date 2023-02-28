@@ -5,6 +5,7 @@ import Blog from './components/Blog';
 import AddNew from './components/AddNew';
 import Welcome from './components/Welcome';
 import BlogDetail from './components/BlogDetail';
+import Notfound from './components/Notfound';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
           <Route path="/blogs" element={<Blog />}></Route>
           <Route path="/create" element={<AddNew />}></Route>
           <Route path="/blogs/:id" element={<BlogDetail />}></Route>
+          <Route path="*" element={<Notfound/>}></Route>
         </Routes>
 
       </div>
