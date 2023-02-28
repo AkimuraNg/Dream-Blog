@@ -1,14 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-// import remove from '../images/trash.svg'
-// import add from '../images/journal-plus.svg'
 
-// import { Link } from 'react-router-dom'
 
-const Lists = ({ blogs, handleDelete }) => {
-
-  // const blogs = props.blogs
-
+const Lists = ({ blogs}) => {
 
   return (
     <div className="lists">
