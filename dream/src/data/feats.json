@@ -1,17 +1,17 @@
 [
     {
         "title": "Just a normal blog",
-        "content": "You can read others stories and upload your own post.",
+        "content": "You can read upload your  post.",
         "image": "https://cdn1.iconfinder.com/data/icons/journalism-and-news-2/512/Journalism-17-512.png"
     },
     {
         "title": "You are the author",
-        "content": "You compose your own stories from your own experiences through dreaming.",
+        "content": "Compose your stories from your dreams",
         "image": "https://cdn2.iconfinder.com/data/icons/hand-conversation/91/Hand_53-512.png"
     },
     {
         "title": "Stay incognito",
-        "content": "Nobody will know who you are.",
+        "content": "You can use nicknames or stay hidden",
         "image": "https://cdn4.iconfinder.com/data/icons/clothes-41/68/incognito_detective_fedora_glasses_undercover_fashion-512.png"
     }
 ]

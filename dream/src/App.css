@@ -115,27 +115,84 @@ button:active {
 /*Card*/
 .featT {
   margin-right: 20px;
+  text-align: right;
 }
-
-.featItems {
-  padding-top: 40px;
+.features {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
 }
-
-.featItems .card {
-  padding: 20px 20px;
-  margin: 0 16px;
-  background-color: whitesmoke;
+.features .card{
+  margin: 40px 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
+.features .card .face{
+  width: auto;
+  height: auto;
+  transition: 0.5s;
+}
+.features .card .face.face1{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  transform: translateX(100px);
+}
+.features .card:hover .face.face1{
+  transform: translateX(0);
+}
+.features .card .face.face1 .card-title{
+  opacity: 0.7;
+  transition: 0.5s;
+}
+.features .card:hover .face.face1 .card-title{
+  opacity: 1;
+}
+.features .card .face.face1 .card-title img{
+  max-width: 50%;
+  background: whitesmoke;
   border: 4px solid whitesmoke;
+  border-radius: 50%;
 }
 
-.featItems .card-title,
-.card-text {
-  color: black
+.features .card .face.face2{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: black;
+  justify-content: center;
+  align-items:flex-start;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+  transform: translateX(-100px);
 }
-
-.card-img {
-  align-self: center;
-  width: 40%
+.features .card:hover .face.face2{
+  transform: translateX(0);
+}
+.features .card .face.face2 h4{
+  color: black;
+  margin: 10px 0 0;
+  padding: 0;
+  font-size: 40px;
+}
+.features .card .face.face2 p{
+  color: black;
+  margin: 0;
+  padding: 0;
+}
+.features .card:hover .face.face2 h4{
+  color: white;
+}
+.features .card:hover .face.face2 p{
+  color: white;
 }
 
 /*Blog*/
@@ -217,9 +274,11 @@ button:active {
   .introSection {
     display: block;
   }
-  .col-5{
+
+  .col-5 {
     width: auto;
   }
+
   .content {
     padding: 10px 10px;
     display: block;
@@ -229,7 +288,7 @@ button:active {
     font-size: 44px;
   }
 
-  .col-7{
+  .col-7 {
     display: none
   }
 
@@ -238,7 +297,7 @@ button:active {
     margin-right: 0px;
   }
 
-  .featItems {
+  /* .featItems {
     display: block;
     padding: 40px 0px;
   }
@@ -249,7 +308,7 @@ button:active {
 
   .card-img {
     width: 30%
-  }
+  } */
 
   .link {
     margin-right: 20px;
@@ -260,13 +319,16 @@ button:active {
     display: flex;
     flex-wrap: wrap;
   }
-  .blogHead{
+
+  .blogHead {
     padding-left: 0px;
   }
-  .blogItems{
+
+  .blogItems {
     padding: 50px 0px;
   }
-  .blog-preview{
+
+  .blog-preview {
     width: 18rem;
     margin: 20px 6px;
   }

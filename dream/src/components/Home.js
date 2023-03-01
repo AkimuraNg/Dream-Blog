@@ -18,7 +18,7 @@ const Home = () => {
             <div className="col-5">
               <div className="content">
                 <h1>Compose <span> your own</span> stories</h1>
-                <h5>Dream Blogs encourage your imagination, your dream and help you compose your own stories.</h5>
+                <h5>Dream Blogs encourage your imagination, your dream, and your experiences. Allowing you to compose and share your own stories.</h5>
               </div>
             </div>
             <div className="col-7">
@@ -28,18 +28,35 @@ const Home = () => {
         </section>
 
         {/* Features view */}
-        <section style={{ textAlign: 'right' }} className="featuresSection" >
+        <section className="featuresSection" >
           <h1 className="featT">Website Features</h1>
           <h4 className="featT">Here are some features that the website currently supports</h4>
           {/* Card views */}
-          <div className="featItems">
+          {/* <div className="featItems">
             {feats.map(post => {
               return (
-                <div className="card" style={{ width: "100%", textAlign: "center" }}>
+                <div className="card">
                   <img src={post.image} className="card-img" alt="..." />
                   <div className="card-body">
                     <h4 className="card-title" style={{ textAlign: 'center' }}>{post.title}</h4>
                     <p className="card-text" >{post.content}</p>
+                  </div>
+                </div>
+              )
+            })}
+          </div> */}
+          <div className="features">
+            {feats.map(post => {
+              return (
+                <div className="card" style={{ backgroundColor: 'black' }}>
+                  <div className="face face1">
+                    <div className="card-title">
+                      <img className="card-img" src={post.image} alt="..." />
+                    </div>
+                  </div>
+                  <div className="face face2">
+                    <h4>{post.title}</h4>
+                    <p>{post.content}</p>
                   </div>
                 </div>
               )
@@ -52,7 +69,7 @@ const Home = () => {
             justifyContent: 'center',
             fontSize: '28px',
             textDecoration: 'none',
-            paddingTop: 30,
+            paddingTop: 50,
             paddingBottom: 40
           }}> Join us in the magical journey. View Stories</Link>
 
