@@ -24,11 +24,12 @@ const BlogDetail = () => {
                 {isPending && <div>Loading...</div>}
                 {error && <div>{error}</div>}
                 {blog && (
-                    <article style={{paddingTop: 100}}>
-                        <h2>{blog.title}</h2>
-                        <p> Written by {blog.author}</p>
-                        <div>{blog.body}</div>
-                        <button onClick = {handleClick}>Delete</button>
+                    <article style={{paddingTop: 100, display: 'flex', flexDirection: 'column'}}>
+                        <h2 style={{textAlign: 'center'}}>{blog.title}</h2>
+                        {/* <img src="https://picsum.photos/350?grayscale" alt="..." style={{alignSelf:'center'}} /> */}
+                        <p style={{textAlign: 'center'}}> Written by {blog.author}</p>
+                        <div className="blog-content">{blog.body}</div>
+                        <button onClick = {handleClick} style={{textAlign: 'center', justifySelf: 'center'}}>Delete</button>
                     </article>
                 )}
             </main>
