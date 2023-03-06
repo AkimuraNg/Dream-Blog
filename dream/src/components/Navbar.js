@@ -13,7 +13,7 @@ const Navbar = () => {
                     <div className="collapse navbar-collapse" id="navbarContent">
                         <ul className="navbar-nav justify-content-center mx-auto">
                             <li className="nav-item">
-                                <Link className="nav-link active" to="/home">Home</Link>
+                                <Link className="nav-link active" to="/">Home</Link>
                             </li>
                             <li className="nav-item">
                                 <Link className="nav-link active" to="/blogs">Blog</Link>

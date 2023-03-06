@@ -3,17 +3,25 @@ import { Link } from 'react-router-dom'
 import Navbar from './Navbar'
 import feats from '../data/feats.json'
 import Footer from './Footer'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 const Home = () => {
+  AOS.init()
   return (
     <div className="container-fluid">
 
       <Navbar />
 
       <main className="wrapper" >
+        {/* Welcome section */}
+        <section className="welcomeSection">
+          <h1>Dream Blogs</h1>
+          {/* <h2>Compose <span>your own</span> stories </h2> */}
+        </section>
 
         {/* Intro view */}
-        <section style={{ paddingTop: 80, textAlign: 'center' }} className="introSection">
+        <section className="introSection" data-aos="fade-up" data-aos-duration="2000">
           <div className="row">
             <div className="col-5">
               <div className="content">
@@ -22,45 +30,40 @@ const Home = () => {
               </div>
             </div>
             <div className="col-7">
-              <img className="coverImage" src="https://images.ctfassets.net/cnu0m8re1exe/2oqTSOy7fSYIQwxnHWs2SJ/a248fbc8289b460bf564f0f6b3bb8859/shutterstock_1842970219.jpg?fm=jpg&fl=progressive&w=660&h=433&fit=fill" alt="Cover" />
+              <img className="coverImage" src="https://img.freepik.com/free-vector/flat-design-magical-dreams-illustration_23-2149668135.jpg?w=1380&t=st=1678111992~exp=1678112592~hmac=1efb10c8b75207377da81007ddc8dfba9ebd8afb6ced39388ae73dd0008ac834" alt="Cover" />
             </div>
           </div>
         </section>
 
         {/* Features view */}
-        <section className="featuresSection" >
+        <section className="featuresSection" data-aos="fade-up" data-aos-duration="3000">
           <h1 className="featT">Website Features</h1>
           <h4 className="featT">Here are some features that the website currently supports</h4>
           {/* Card views */}
-          {/* <div className="featItems">
-            {feats.map(post => {
-              return (
-                <div className="card">
-                  <img src={post.image} className="card-img" alt="..." />
-                  <div className="card-body">
-                    <h4 className="card-title" style={{ textAlign: 'center' }}>{post.title}</h4>
-                    <p className="card-text" >{post.content}</p>
-                  </div>
-                </div>
-              )
-            })}
-          </div> */}
           <div className="features">
-            {feats.map(post => {
-              return (
-                <div className="card" style={{ backgroundColor: 'black' }}>
-                  <div className="face face1">
-                    <div className="card-title">
-                      <img className="card-img" src={post.image} alt="..." />
+            <div className="row">
+              <div className="col-6">
+                {feats.map(post => {
+                  return (
+                    <div className="card" style={{ backgroundColor: 'black', paddingTop: 60 }}>
+                      <div className="face face1">
+                        <div className="card-title">
+                          <img className="card-img" src={post.image} alt="..." />
+                        </div>
+                      </div>
+                      <div className="face face2">
+                        <h4>{post.title}</h4>
+                        <p>{post.content}</p>
+                      </div>
                     </div>
-                  </div>
-                  <div className="face face2">
-                    <h4>{post.title}</h4>
-                    <p>{post.content}</p>
-                  </div>
-                </div>
-              )
-            })}
+                  )
+                })}
+              </div>
+              <div className="col-6">
+                <img className="coverImage" src="https://img.freepik.com/free-vector/flat-design-magical-dreams-illustration_23-2149668132.jpg?w=826&t=st=1678112238~exp=1678112838~hmac=5eeb632bc74723e34211e4df469747b32e14221087d13351a75cf70c96d8e3db" alt="..."/>
+              </div>
+            </div>
+
           </div>
 
           <Link to="/blogs" className="link" style={{
