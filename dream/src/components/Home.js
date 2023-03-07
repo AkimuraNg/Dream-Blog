@@ -16,7 +16,10 @@ const Home = () => {
       <main className="wrapper" >
         {/* Welcome section */}
         <section className="welcomeSection">
-          <h1>Dream Blogs</h1>
+          <div data-aos="fade-up" data-aos-duration="2000">
+            <h1 style={{ fontStyle: 'italic' }} >"I dream of painting and then I paint my dream."</h1>
+            <span style={{ fontSize: 30, fontStyle: 'italic', color: 'rgba(160, 89, 231)' }}>----Vincent Van Gogh----</span>
+          </div>
           {/* <h2>Compose <span>your own</span> stories </h2> */}
         </section>
 
@@ -25,7 +28,7 @@ const Home = () => {
           <div className="row">
             <div className="col-5">
               <div className="content">
-                <h1>Compose <span> your own</span> stories</h1>
+                <h1>Compose <span style={{ fontSize: 80, fontStyle: 'italic', color: 'rgba(160, 89, 231)' }}>YOUR OWN</span> stories</h1>
                 <h5>Dream Blogs encourage your imagination, your dream, and your experiences. Allowing you to compose and share your own stories.</h5>
               </div>
             </div>
@@ -37,8 +40,7 @@ const Home = () => {
 
         {/* Features view */}
         <section className="featuresSection" data-aos="fade-up" data-aos-duration="3000">
-          <h1 className="featT">Website Features</h1>
-          <h4 className="featT">Here are some features that the website currently supports</h4>
+          <h1 className="featT" style={{ fontSize: 60 }}>Websites Features</h1>
           {/* Card views */}
           <div className="features">
             <div className="row">
@@ -60,7 +62,7 @@ const Home = () => {
                 })}
               </div>
               <div className="col-6">
-                <img className="coverImage" src="https://img.freepik.com/free-vector/flat-design-magical-dreams-illustration_23-2149668132.jpg?w=826&t=st=1678112238~exp=1678112838~hmac=5eeb632bc74723e34211e4df469747b32e14221087d13351a75cf70c96d8e3db" alt="..."/>
+                <img className="coverImage" src="https://img.freepik.com/free-vector/flat-design-magical-dreams-illustration_23-2149668132.jpg?w=826&t=st=1678112238~exp=1678112838~hmac=5eeb632bc74723e34211e4df469747b32e14221087d13351a75cf70c96d8e3db" alt="..." />
               </div>
             </div>
 
@@ -74,7 +76,7 @@ const Home = () => {
             textDecoration: 'none',
             paddingTop: 50,
             paddingBottom: 40
-          }}> Join us in the magical journey. View Stories</Link>
+          }}> Join us in the magical journey</Link>
 
         </section>
       </main >

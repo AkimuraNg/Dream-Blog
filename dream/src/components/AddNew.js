@@ -31,8 +31,8 @@ const AddNew = () => {
   return (
     <div className="container-fluid">
       <Navbar />
-      <main className="wrapper">
-        <h1 style={{ paddingTop: 120, textAlign: 'center' }}>Create a new story</h1>
+      <main className="wrapper create">
+        <h1 style={{ paddingTop: 120, textAlign: 'center', color: 'black' }}>Create a new story</h1>
         <form className="add-form" onSubmit={handleSubmit}>
           <label>Blog Title</label>
           <input type="text" required value={title} onChange={(e) => setTitle(e.target.value)}></input>
