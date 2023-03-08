@@ -1,10 +1,20 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { Link } from 'react-router-dom'
 
 const Navbar = () => {
+    const [nav, setNav] = useState(false)
+
+    const changeBg = () =>{
+        if(window.scrollY >= 50){
+            setNav(true)
+        }else{
+            setNav(false)
+        }
+    }
+    window.addEventListener('scroll', changeBg)
     return (
         <div> {/* Navigation bar */}
-            <nav className="navbar navbar-expand-lg fixed-top bg-dark navbar-dark">
+            <nav className={nav ? "navbar navbar-expand-lg fixed-top bg-dark": "navbar navbar-expand-lg fixed-top"}>
                 <div className="container-fluid">
                     {/* <a className="navbar-brand" href="#">Navbar</a> */}
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">

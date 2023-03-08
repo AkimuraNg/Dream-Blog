@@ -1,6 +1,5 @@
 import React from 'react'
 import Lists from '../data/Lists'
-import Navbar from './Navbar'
 import Footer from './Footer'
 import useFetch from './useFetch'
 
@@ -12,7 +11,6 @@ const Blog = () => {
 
     return (
         <div className="container-fluid">
-            <Navbar />
             <main className="wrapper">
                 <div className="Blog">
                     <section className="blogHead" style={{ textAlign: 'center' }}>

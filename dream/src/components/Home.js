@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Navbar from './Navbar'
 import feats from '../data/feats.json'
 import Footer from './Footer'
 import AOS from 'aos'
@@ -10,15 +9,13 @@ const Home = () => {
   AOS.init()
   return (
     <div className="container-fluid">
-
-      <Navbar />
-
       <main className="wrapper" >
         {/* Welcome section */}
         <section className="welcomeSection">
           <div data-aos="fade-up" data-aos-duration="2000">
-            <h1 style={{ fontStyle: 'italic' }} >"I dream of painting and then I paint my dream."</h1>
-            <span style={{ fontSize: 30, fontStyle: 'italic', color: 'rgba(160, 89, 231)' }}>----Vincent Van Gogh----</span>
+            <h2 style={{ fontStyle: 'italic', color: '#D4A017', textTransform: 'uppercase' }} >"I dream of painting and then I paint my dream."</h2>
+            <span style={{ fontStyle: 'italic' }}>Vincent Van Gogh</span>
+            <h1 style={{ paddingTop: 100, color: '#D4A017' }}>Welcome to DREAM BLOGS</h1>
           </div>
           {/* <h2>Compose <span>your own</span> stories </h2> */}
         </section>
@@ -28,7 +25,7 @@ const Home = () => {
           <div className="row">
             <div className="col-5">
               <div className="content">
-                <h1>Compose <span style={{ fontSize: 80, fontStyle: 'italic', color: 'rgba(160, 89, 231)' }}>YOUR OWN</span> stories</h1>
+                <h1>Compose <span style={{ fontSize: 80, fontStyle: 'italic', color: '#D4A017' }}>YOUR OWN</span> stories</h1>
                 <h5>Dream Blogs encourage your imagination, your dream, and your experiences. Allowing you to compose and share your own stories.</h5>
               </div>
             </div>
@@ -40,7 +37,7 @@ const Home = () => {
 
         {/* Features view */}
         <section className="featuresSection" data-aos="fade-up" data-aos-duration="3000">
-          <h1 className="featT" style={{ fontSize: 60 }}>Websites Features</h1>
+          <h1 className="featT" style={{ fontSize: 60 }}>Website Features</h1>
           {/* Card views */}
           <div className="features">
             <div className="row">
@@ -65,6 +62,22 @@ const Home = () => {
                 <img className="coverImage" src="https://img.freepik.com/free-vector/flat-design-magical-dreams-illustration_23-2149668132.jpg?w=826&t=st=1678112238~exp=1678112838~hmac=5eeb632bc74723e34211e4df469747b32e14221087d13351a75cf70c96d8e3db" alt="..." />
               </div>
             </div>
+          </div>
+          {/* Card view responsive */}
+          <div className="featuresRes">
+            {feats.map(post => {
+              return (
+                <div className="card" style={{ backgroundColor: 'black', paddingTop: 60 }}>
+                  <div className="card-title">
+                    <img className="card-img" src={post.image} alt="..." />
+                  </div>
+                  <div className="card-content">
+                    <h4>{post.title}</h4>
+                    <p>{post.content}</p>
+                  </div>
+                </div>
+              )
+            })}
 
           </div>
 
