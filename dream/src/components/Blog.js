@@ -14,7 +14,7 @@ const Blog = () => {
             <main className="wrapper">
                 <div className="Blog">
                     <section className="blogHead" style={{ textAlign: 'center' }}>
-                        <h1>Blog Page</h1>
+                        <h1>Stories Zone</h1>
                         <p>Here you can view other stories and publish your own.</p>
                     </section>
 

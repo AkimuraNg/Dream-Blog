@@ -23,7 +23,7 @@ const BlogDetail = () => {
                 {error && <div>{error}</div>}
                 {blog && (
                     <article style={{paddingTop: 100, display: 'flex', flexDirection: 'column'}}>
-                        <h2 style={{textAlign: 'center'}}>{blog.title}</h2>
+                        <h2 style={{textAlign: 'center', color: '#D4A017'}}>{blog.title}</h2>
                         <p style={{textAlign: 'center'}}> Written by {blog.author}</p>
                         <div className="blog-content">{blog.body}</div>
                         <button onClick = {handleClick} style={{textAlign: 'center', justifySelf: 'center'}}>Remove</button>

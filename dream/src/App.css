@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&display=swap');
+/*Image by storyset on Freepik*/
+/*https://www.freepik.com/author/stories*/
 
 .App {
   /* text-align: center; */
@@ -7,9 +9,6 @@
   color: whitesmoke;
 }
 
-h1 {
-  text-transform: uppercase;
-}
 
 p {
   font-size: 18px;
@@ -74,7 +73,7 @@ button:active {
 
 .nav-link {
   font-size: 20px;
-  color: white !important;
+  color: #D4A017 !important;
   margin: 0 12px;
 }
 
@@ -97,63 +96,60 @@ button:active {
 }
 
 /*Home page*/
-.welcomeSection {
-  padding-top: 260px;
-  text-align: center;
-  min-height: 100vh;
-  background-position: 0px 0px;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-image: url('https://img.freepik.com/free-vector/realistic-magical-dreams-background_23-2149687809.jpg?w=1380&t=st=1678277674~exp=1678278274~hmac=19e4e7d22d1bcfb98502374370fc7457f9bb6fdd2e9a2bed1834e04b085dce3c')
-}
 
-.welcomeSection h1 {
-  font-size: 80px;
-}
-
-.welcomeSection h2 {
-  font-size: 40px;
-}
-
-.welcomeSection span {
-  font-size: 30px;
-}
-
+/*Intro section*/
+/*Image: https://img.freepik.com/free-vector/dreamer-concept-illustration_114360-2972.jpg?w=826&t=st=1678366681~exp=1678367281~hmac=db74b05b3ee46d62046493f5ed283d84aa75c5959dab3a57c1adc52e15752367*/
 .introSection {
+  padding-top: 20px;
   display: flex;
   justify-content: space-between;
 }
 
-.featItems {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-evenly;
-}
-
 .content {
-  padding: 200px 100px;
-  text-align: left;
+  padding: 380px 100px;
+  text-align: center;
 }
-
 .content h1 {
-  font-size: 80px;
+  font-size: 96px;
 }
-
-.content span {
-  color: rgb(160, 89, 231);
+.content h2 {
+  color: #D4A017;
+  font-size: 40px;
   font-style: italic;
+}
+.content h5 {
+  font-size: 24px;
 }
 
 .coverImage {
-  padding: 100px 40px;
+  padding: 80px 40px;
   width: 100%;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
-/*Features*/
+/*About Section*/
+/*Image: https://img.freepik.com/free-vector/dreamer-concept-illustration_114360-5235.jpg?w=1380&t=st=1678367730~exp=1678368330~hmac=e48196a59d31e306104bd5d3a0a1f6c02ac327d8078f3fb923cef2bb04d97484 */
+.aboutSection{
+  padding-top: 60px;
+}
+.aboutT{
+  color: #D4A017;
+  margin: 10px 10px;
+  font-size: 52px;
+  text-align: center;
+}
+/*Features section*/
+/*Image: https://img.freepik.com/free-vector/imagination-concept-illustration_114360-8085.jpg?w=826&t=st=1678367785~exp=1678368385~hmac=027d1c138da3a79a2782aa061f1f26422c19932f4db688160c8095b886a0d42c*/
+
+.featuresSection{
+padding-top: 40px;
+}
+
 .featT {
-  margin-right: 20px;
-  text-align: right;
+  margin: 10px 10px;
+  text-align: center;
+  font-size: 52px;
+  color: #D4A017;
 }
 
 .features {
@@ -165,7 +161,8 @@ button:active {
 }
 
 .features .card {
-  margin: 56px 20px;
+  padding: 44px 0px;
+  margin: 64px 20px;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -201,7 +198,7 @@ button:active {
 }
 
 .features .card .face.face1 .card-title img {
-  max-width: 36%;
+  max-width: 40%;
   background: whitesmoke;
   border: 4px solid whitesmoke;
   border-radius: 50%;
@@ -238,7 +235,7 @@ button:active {
 }
 
 .features .card:hover .face.face2 h4 {
-  color: white;
+  color: #D4A017;
 }
 
 .features .card:hover .face.face2 p {
@@ -249,6 +246,9 @@ button:active {
 .blogHead {
   padding-top: 120px;
   padding-left: 40px;
+}
+.blogHead h1{
+  color:#D4A017;
 }
 
 .blogItems {
@@ -265,7 +265,7 @@ button:active {
 }
 
 .blog-preview {
-  border: 2px solid whitesmoke;
+  border: 2px solid #D4A017;
   border-radius: 8px;
   padding: 10px 16px;
   margin: 20px 12px;
@@ -276,7 +276,7 @@ button:active {
 }
 
 .blog-preview:hover {
-  box-shadow: 1px 3px 5px whitesmoke;
+  box-shadow: 1px 3px 5px #D4A017;
 }
 
 .blog-content {
@@ -286,6 +286,13 @@ button:active {
 }
 
 /*Create New Blog*/
+.create{
+  padding-top: 120px;
+}
+.create h1{
+text-align: center;
+color: #D4A017
+}
 .add-form {
   max-width: 500px;
   padding: 20px 0;
@@ -294,7 +301,7 @@ button:active {
 }
 
 .add-form label {
-  color: rgb(160, 89, 231);
+  color: #D4A017;
   font-size: 24px;
   display: block;
   margin: 10px auto;
@@ -318,17 +325,8 @@ button:active {
 
 .add-form span {
   font-style: italic;
-  color: black
+  color: #D4A017
 }
-
-.create {
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-image: url('https://img.freepik.com/free-vector/flat-design-boho-frame-design_23-2149274477.jpg?w=1380&t=st=1678279051~exp=1678279651~hmac=3cb2e45afab14c91938f63b670a3688b117f73157705824ae1f7d41e4615fb03');
-}
-
-
-/*Not found*/
 
 /*Footer*/
 .footer {
@@ -348,7 +346,7 @@ button:active {
     display: block;
   }
 
-  .col-5 {
+  .content .col-5 {
     width: auto;
   }
 
@@ -361,7 +359,7 @@ button:active {
     font-size: 44px;
   }
 
-  .col-7 {
+  .content .col-7 {
     display: none
   }
 

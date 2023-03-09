@@ -1,0 +1,10 @@
+{
+  "blogs": [
+    {
+      "title": "Hello Dreamers",
+      "body": "Testing\ntesting",
+      "author": "Anonymous",
+      "id": 1
+    }
+  ]
+}
