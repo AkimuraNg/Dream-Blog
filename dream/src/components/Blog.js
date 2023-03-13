@@ -1,6 +1,5 @@
 import React from 'react'
 import Lists from '../data/Lists'
-import Footer from './Footer'
 import useFetch from './useFetch'
 
 
@@ -25,7 +24,6 @@ const Blog = () => {
                     </section>
                 </div>
             </main>
-            <Footer />
         </div>
     )
 }

@@ -6,7 +6,7 @@ const Footer = () => {
             {/* Footer */}
             <footer className="footer">
                 <div className="container-fluid">
-                    <h3>Copyrights 2022</h3>
+                    <h3 style={{fontSize: 24}}>Copyrights</h3>
                 </div>
             </footer></div>
     )

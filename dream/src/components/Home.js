@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import feats from '../data/feats.json'
-import Footer from './Footer'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
@@ -21,7 +20,7 @@ const Home = () => {
             <div className="col-6">
               <div className="content">
                 <h1>Dream Blogs</h1>
-                <h2>---Compose Your Own Stories---</h2>
+                <h2>Compose Your Own Stories</h2>
                 <h5>Express your imagination, your dream, and your experiences.</h5>
               </div>
             </div>
@@ -36,7 +35,12 @@ const Home = () => {
           <h1 className="aboutT"> --About the Website--</h1>
           <div className="row">
             <div className="col-6">
-              <img className="coverImage" src={about} alt="..."/>
+              <img className="coverImage" src={about} alt="..." />
+            </div>
+            <div className="col-6">
+              <div className="aboutContent">
+                <h2>Dreaming Experience</h2>
+              </div>
             </div>
           </div>
 
@@ -85,22 +89,19 @@ const Home = () => {
                 </div>
               )
             })}
-
           </div>
 
-          <Link to="/blogs" style={{
-            color: 'whitesmoke',
+          {/* <Link to="/stories" style={{
+            color: '#D4A017',
             display: 'flex',
             justifyContent: 'center',
-            fontSize: '28px',
+            fontSize: '30px',
             textDecoration: 'none',
-            paddingTop: 50,
+            paddingTop: 28,
             paddingBottom: 40
-          }}> Join us in the magical journey</Link>
-
+          }}> Join us in the magical journey</Link> */}
         </section>
       </main >
-      <Footer />
     </div >
   )
 }

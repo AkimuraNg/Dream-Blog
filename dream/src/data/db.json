@@ -1,3 +1,10 @@
 {
-  "blogs": []
+  "blogs": [
+    {
+      "title": "Hello Dreamers",
+      "body": "Welcome to Dream Blogs!\nThis is the first blog created in this website. It has been an interesting journey developing and perfecting this website. In this first blog, I want to say thank you to everyone who will use this website to express their dream experience. As the creator of this website, I hope you will have a good time using this website. \nThank you very much to my fellow future users.",
+      "author": "The Creator",
+      "id": 1
+    }
+  ]
 }

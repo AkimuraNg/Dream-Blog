@@ -1,10 +1,9 @@
 import React, { useState } from 'react'
 import {useNavigate} from 'react-router-dom'
-import Footer from './Footer'
 
 const AddNew = () => {
 
-  const [title, setTitle]= useState('Hello Dreamers')
+  const [title, setTitle]= useState('Add Title')
   const [body, setBody] = useState('')
   const [author, setAuthor] = useState('Anonymous')
   const [isPending, setIsPending] = useState(false)
@@ -23,7 +22,7 @@ const AddNew = () => {
     }).then(()=>{
       console.log('Added');
       setIsPending(false)
-      navigate('/blogs')
+      navigate('/stories')
     })
   }
 
@@ -45,7 +44,6 @@ const AddNew = () => {
           { isPending && <button disable>Loading...</button>}
         </form>
       </main>
-      <Footer />
     </div>
   )
 }
