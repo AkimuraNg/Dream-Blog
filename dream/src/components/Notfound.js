@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import notfound from './images/Notfound.png'
 
 
 const Notfound = () => {
@@ -9,7 +10,8 @@ const Notfound = () => {
                 <div style={{ paddingTop: 200, textAlign: 'center' }}>
                     <h1>Sorry!</h1>
                     <p>The page you are looking for is not available.</p>
-                    <img style={{ paddingTop: 20, paddingBottom: 20 }} src='https://www.psychologicalscience.org/redesign/wp-content/uploads/2016/05/PAFF_052416_SixElementsApology_Vectorguy_newsfeature1-300x250.jpg' alt="Sorry" />
+                    {/*Image: https://img.freepik.com/free-vector/404-error-with-landscape-concept-illustration_114360-7888.jpg?w=826&t=st=1678369473~exp=1678370073~hmac=40b5c73a3a23d9df6f5b52eb1ab767c714db23c758ddc9c28bc44de65b67912f */}
+                    <img style={{ paddingTop: 20, paddingBottom: 20, width: '20%' }} src={notfound} alt="Sorry" />
                     <Link to='/' style={{
                         justifyContent: 'center',
                         fontSize: 20,

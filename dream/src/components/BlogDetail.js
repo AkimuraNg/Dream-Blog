@@ -1,5 +1,4 @@
 import React from 'react'
-import Footer from './Footer'
 import { useParams, useNavigate } from 'react-router-dom'
 import useFetch from './useFetch'
 
@@ -12,25 +11,24 @@ const BlogDetail = () => {
         fetch('http://localhost:3002/blogs/' + blog.id,{
             method: 'DELETE'
         }).then(() => {
-            navigate('/blogs')
+            navigate('/stories')
         })
     }
 
     return (
         <div className="container-fluid">
             <main className="wrapper" >
-                {isPending && <div>Loading...</div>}
+                {isPending && <div style={{textAlign: 'center', paddingTop: 400, fontSize: 32}}>Loading...</div>}
                 {error && <div>{error}</div>}
                 {blog && (
                     <article style={{paddingTop: 100, display: 'flex', flexDirection: 'column'}}>
-                        <h2 style={{textAlign: 'center'}}>{blog.title}</h2>
+                        <h2 style={{textAlign: 'center', color: '#D4A017'}}>{blog.title}</h2>
                         <p style={{textAlign: 'center'}}> Written by {blog.author}</p>
                         <div className="blog-content">{blog.body}</div>
                         <button onClick = {handleClick} style={{textAlign: 'center', justifySelf: 'center'}}>Remove</button>
                     </article>
                 )}
             </main>
-            <Footer />
         </div>
 
     )

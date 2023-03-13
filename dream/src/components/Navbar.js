@@ -21,12 +21,12 @@ const Navbar = () => {
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="collapse navbar-collapse" id="navbarContent">
-                        <ul className="navbar-nav justify-content-center mx-auto">
+                        <ul className="navbar-nav">
                             <li className="nav-item">
                                 <Link className="nav-link active" to="/">Home</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link active" to="/blogs">Blog</Link>
+                                <Link className="nav-link active" to="/stories">Stories</Link>
                             </li>
                             <li className="nav-item">
                                 <Link className="nav-link active" to="/create">Compose</Link>
