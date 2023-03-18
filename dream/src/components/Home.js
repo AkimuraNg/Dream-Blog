@@ -40,6 +40,12 @@ const Home = () => {
             <div className="col-6">
               <div className="aboutContent">
                 <h2>Dreaming Experience</h2>
+                <p>Dream is one of the most wonderful things that happens for human life. 
+                  <br/> Through dreams, we can express ourselves with imaginations, ideas, experiences.
+                  <br/> Through dream, we are capable of becoming better, improving our life.
+                  <br/> Through dream, we are able to pursuit our goals and make them possible.
+                  <br/> Dream Blogs allow users to freely express their dream experiences, emotions, and imaginations into stories of their own words.
+                </p>
               </div>
             </div>
           </div>
@@ -52,17 +58,13 @@ const Home = () => {
           {/* Card views */}
           <div className="features">
             <div className="row">
-              <div className="col-6">
+              <div className="col-6 feats">
                 {feats.map(post => {
                   return (
-                    <div className="card" style={{ backgroundColor: 'black', paddingTop: 60 }}>
-                      <div className="face face1">
-                        <div className="card-title">
-                          <img className="card-img" src={post.image} alt="..." />
-                        </div>
-                      </div>
-                      <div className="face face2">
-                        <h4>{post.title}</h4>
+                    <div className="cardFeat">
+                      <img src={post.image} alt="..." />
+                      <div className="card-body">
+                        <h5>{post.title}</h5>
                         <p>{post.content}</p>
                       </div>
                     </div>
@@ -73,33 +75,16 @@ const Home = () => {
                 <img className="coverImage" src={feat} alt="..." />
               </div>
             </div>
-          </div>
-          {/* Card view responsive */}
-          <div className="featuresRes">
-            {feats.map(post => {
-              return (
-                <div className="card" style={{ backgroundColor: 'black', paddingTop: 60 }}>
-                  <div className="card-title">
-                    <img className="card-img" src={post.image} alt="..." />
-                  </div>
-                  <div className="card-content">
-                    <h4>{post.title}</h4>
-                    <p>{post.content}</p>
-                  </div>
-                </div>
-              )
-            })}
+            <Link to="/stories" style={{
+              color: '#D4A017',
+              display: 'flex',
+              justifyContent: 'center',
+              fontSize: '30px',
+              textDecoration: 'none',
+              paddingBottom: 40
+            }}> The journey of dreams is waiting for you</Link>
           </div>
 
-          {/* <Link to="/stories" style={{
-            color: '#D4A017',
-            display: 'flex',
-            justifyContent: 'center',
-            fontSize: '30px',
-            textDecoration: 'none',
-            paddingTop: 28,
-            paddingBottom: 40
-          }}> Join us in the magical journey</Link> */}
         </section>
       </main >
     </div >
