@@ -1,21 +1,21 @@
 {
   "blogs": [
     {
-      "title": "Hello Dreamers",
-      "body": "Welcome to Dream Blogs!\nThis is the first blog created in this website. It has been an interesting journey developing and perfecting this website. In this first blog, I want to say thank you to everyone who will use this website to express their dream experience. As the creator of this website, I hope you will have a good time using this website. \nThank you very much to my fellow future users.",
-      "author": "The Creator",
+      "title": "Hello World",
+      "body": "Hello World",
+      "author": "SpaceMAn9867",
       "id": 1
     },
     {
-      "title": "New Story",
-      "body": "Hello there",
+      "title": "Bonjour",
+      "body": "Hello",
       "author": "Anonymous",
       "id": 2
     },
     {
-      "title": "Add Title",
-      "body": "Hello there\n",
-      "author": "Anonymous",
+      "title": "Testing hello",
+      "body": "Hello tested",
+      "author": "Anonymous333",
       "id": 3
     }
   ]

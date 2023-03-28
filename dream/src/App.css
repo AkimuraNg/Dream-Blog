@@ -28,17 +28,15 @@ main {
 
 /*Button*/
 button {
-  background-color: white;
+  background-color: #D4A017;
   color: black;
   border: none;
-  padding: 10;
   margin: auto;
   font-size: 20px;
   height: 40px;
   width: auto;
   border-radius: 8px;
   box-sizing: border-box;
-  cursor: pointer;
   transition: all 0.2s ease;
 }
 
@@ -47,19 +45,19 @@ button {
 }
 
 button:active {
-  background-color: whitesmoke;
+  background-color: #D4A017;
   box-shadow: 0 0 2px black;
   transform: translateY(2px);
 }
 
 .btn-primary:active {
-  background-color: whitesmoke;
+  background-color: #D4A017;
   box-shadow: 0 0 2px black;
   transform: translateY(2px);
 }
 
 .btn-primary:hover {
-  background-color: whitesmoke;
+  background-color: #D4A017;
 }
 
 /*Navbar*/
@@ -114,6 +112,7 @@ button:active {
 
 .content h1 {
   font-size: 96px;
+  color: #D4A017;
 }
 
 .content h2 {
