@@ -15,7 +15,7 @@ const AddNew = () => {
 
     setIsPending(true)
 
-    fetch('http://localhost:3002/blogs', {
+    fetch('https://supreme-spangle-savory.glitch.me/blogs', {
       method: 'POST',
       headers: {"Content-Type": "application/json"},
       body:JSON.stringify(blog)

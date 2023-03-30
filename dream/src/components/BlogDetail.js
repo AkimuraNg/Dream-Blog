@@ -4,11 +4,11 @@ import useFetch from './useFetch'
 
 const BlogDetail = () => {
     const { id } = useParams()
-    const { data: blog, error, isPending } = useFetch('http://localhost:3002/blogs/' + id)
+    const { data: blog, error, isPending } = useFetch('https://supreme-spangle-savory.glitch.me/blogs' + id)
     const navigate = useNavigate();
 
     const handleClick = () => {
-        fetch('http://localhost:3002/blogs/' + blog.id,{
+        fetch('https://supreme-spangle-savory.glitch.me/blogs' + blog.id,{
             method: 'DELETE'
         }).then(() => {
             navigate('/stories')

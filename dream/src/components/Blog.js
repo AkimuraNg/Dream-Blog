@@ -5,7 +5,7 @@ import useFetch from './useFetch'
 
 const Blog = () => {
 
-    const {data : blogs, isPending, error} = useFetch('http://localhost:3002/blogs')
+    const {data : blogs, isPending, error} = useFetch('https://supreme-spangle-savory.glitch.me/blogs')
     
 
     return (
