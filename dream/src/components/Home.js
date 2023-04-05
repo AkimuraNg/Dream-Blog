@@ -39,12 +39,11 @@ const Home = () => {
             </div>
             <div className="col-6">
               <div className="aboutContent">
-                <h2>Dreaming Experience</h2>
-                <p>Dream is one of the most wonderful things that happens for human life. 
-                  <br/> Through dreams, we can express ourselves with imaginations, ideas, experiences.
-                  <br/> Through dream, we are capable of becoming better, improving our life.
-                  <br/> Through dream, we are able to pursuit our goals and make them possible.
-                  <br/> Dream Blogs allow users to freely express their dream experiences, emotions, and imaginations into stories of their own words.
+                <h2>Why Do We Dream?</h2>
+                <p>Dream Blog is a story telling website. You can create your own stories base on your dreams.
+                  <br />Your stories can based on dreaming experiences: was it a wonderful dream or a bad dream?
+                  <br />Your stories can based on emotions you have when dreaming: was it joyful, delightful, etc.
+                  <br/> Dreaming nuture your imagination and you can express them at Dream Blog.
                 </p>
               </div>
             </div>

@@ -9,7 +9,7 @@ const Lists = ({ blogs}) => {
       {blogs.map((blog) => (
         <div>
           <div className="blog-preview" key={blogs.id}>
-            <Link to={`/stories/${blog.id}`} style={{color: 'white', textDecoration: 'none'}}>
+            <Link to={`/blogs/${blog.id}`} style={{color: 'white', textDecoration: 'none'}}>
               <h2 style={{ marginBottom: 16 }}>{blog.title}</h2>
               <p>Written by {blog.author}</p>
             </Link>
