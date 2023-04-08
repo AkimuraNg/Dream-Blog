@@ -29,7 +29,7 @@ const AddNew = () => {
   return (
     <div className="container-fluid">
       <main className="wrapper create">
-        <h1>Create a new story</h1>
+        <h1>Create your new story</h1>
         <form className="add-form" onSubmit={handleSubmit}>
           <label>Blog Title</label>
           <input type="text" required value={title} onChange={(e) => setTitle(e.target.value)}></input>

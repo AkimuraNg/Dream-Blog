@@ -7,6 +7,7 @@ import 'aos/dist/aos.css'
 import intro from './images/introcoverimg-bystoryset.png'
 import feat from './images/featCover by storyset.png'
 import about from './images/abtCover by storyset.png'
+import illu from './images/Creative thinking - byStoryset.png'
 
 const Home = () => {
   AOS.init()
@@ -33,22 +34,28 @@ const Home = () => {
         {/* About view */}
         <section className="aboutSection" data-aos="fade-up" data-aos-duration="2500">
           <h1 className="aboutT"> --About the Website--</h1>
-          <div className="row">
-            <div className="col-6">
-              <img className="coverImage" src={about} alt="..." />
-            </div>
-            <div className="col-6">
-              <div className="aboutContent">
-                <h2>Why Do We Dream?</h2>
-                <p>Dream Blog is a story telling website. You can create your own stories base on your dreams.
-                  <br />Your stories can based on dreaming experiences: was it a wonderful dream or a bad dream?
-                  <br />Your stories can based on emotions you have when dreaming: was it joyful, delightful, etc.
-                  <br/> Dreaming nuture your imagination and you can express them at Dream Blog.
-                </p>
+          <div className="about">
+            <div className="row">
+              <div className="col-6">
+                <img className="coverImage" src={about} alt="..." />
+              </div>
+              <div className="col-6">
+                <div className="aboutContent">
+                  <div>
+                    <h3>What is Dream Blog?</h3>
+                    <p>
+                      Dream Blog is a story telling website using dreams as the topic for all users.
+                      <br />Here, you can compose your stories based on your dreams.
+                      <br /> Nobody will knows who you are as long as you decide to remain anonymous.
+                      <br /> You can freely write any stories that you want, expressing your experiences, your emotions, your imagination.
+                      <br /> No matter how good or bad the story is, everything is allowed on Dream Blog, nobody can judge you for who you are.
+                    </p>
+                    <img className="illustration" src={illu} alt="..."/>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-
         </section>
 
         {/* Features view */}
@@ -74,7 +81,7 @@ const Home = () => {
                 <img className="coverImage" src={feat} alt="..." />
               </div>
             </div>
-            <Link to="/stories" style={{
+            <Link to="/blogs" style={{
               color: '#D4A017',
               display: 'flex',
               justifyContent: 'center',

@@ -126,13 +126,14 @@ button:active {
 }
 
 .coverImage {
-  padding: 80px 40px;
+  padding: 72px 40px;
   width: 100%;
   opacity: 0.7;
 }
 
 /*About Section*/
 /*Image: https://img.freepik.com/free-vector/dreamer-concept-illustration_114360-5235.jpg?w=1380&t=st=1678367730~exp=1678368330~hmac=e48196a59d31e306104bd5d3a0a1f6c02ac327d8078f3fb923cef2bb04d97484 */
+/*Image: https://storyset.com/illustration/creative-thinking/cuate#FFC100FF&hide=&hide=complete */
 .aboutSection {
   padding-top: 60px;
 }
@@ -144,26 +145,30 @@ button:active {
   text-align: center;
 }
 
-.aboutContent {
+.aboutContent{
   text-align: left;
-  padding-top: 200px;
-  margin: 80px 32px;
+  margin: 100px 32px;
 }
 
-.aboutContent h2 {
-  font-size: 44px;
+.aboutContent h3{
+  font-size: 40px;
   color: #D4A017;
 }
-.aboutContent p {
+
+.aboutContent p{
   font-size: 24px;
 }
-.aboutSection .coverImage{
-  padding: 0px 40px;
+
+.illustration{
+  padding: 20px 20px;
+  margin: 0px 200px;
+  width: 50%;
+  opacity: 0.7;
 }
 /*Features section*/
 /*Image: https://img.freepik.com/free-vector/imagination-concept-illustration_114360-8085.jpg?w=826&t=st=1678367785~exp=1678368385~hmac=027d1c138da3a79a2782aa061f1f26422c19932f4db688160c8095b886a0d42c*/
 .featuresSection {
-  padding-top: 40px;
+  padding-top: 20px;
 }
 
 .featT {
