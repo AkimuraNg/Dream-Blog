@@ -33,7 +33,7 @@ const Home = () => {
 
         {/* About view */}
         <section className="aboutSection" data-aos="fade-up" data-aos-duration="2500">
-          <h1 className="aboutT"> --About the Website--</h1>
+          <h1 className="aboutT"> About the Website</h1>
           <div className="about">
             <div className="row">
               <div className="col-6">
@@ -60,7 +60,7 @@ const Home = () => {
 
         {/* Features view */}
         <section className="featuresSection" data-aos="fade-up" data-aos-duration="3000">
-          <h1 className="featT">--Website Features--</h1>
+          <h1 className="featT"> Website Features </h1>
           {/* Card views */}
           <div className="features">
             <div className="row">
@@ -87,6 +87,7 @@ const Home = () => {
               justifyContent: 'center',
               fontSize: '30px',
               textDecoration: 'none',
+              textAlign:'center',
               paddingBottom: 40
             }}> The journey of dreams is waiting for you</Link>
           </div>
