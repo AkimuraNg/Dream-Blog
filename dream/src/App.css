@@ -186,7 +186,7 @@ button:active {
 }
 
 .cardFeat {
-  width: 24rem;
+  width: 18rem;
   margin: 24px 0px;
   padding: 32px 8px;
   display: flex;
@@ -352,21 +352,41 @@ button:active {
     flex-direction: row;
   }
 
+  .aboutT{
+    font-size: 40px;
+  }
+
   .aboutContent {
     padding: 0;
     margin: 0;
     text-align: center;
   }
 
+  .aboutContent p{
+    padding: 20px 0px;
+    font-size: 20px;
+    text-align: left;
+  }
+
+  .illustration{
+    margin: 0px 0px;
+    padding: 0px 0px;
+  }
+
   /*Card*/
   .featT {
     margin-right: 0px;
+    font-size: 40px;
   }
 
   .link {
     margin-right: 20px;
   }
 
+  .cardFeat{
+    width: 16rem;
+    margin: 12px 0px;
+  }
 
   /*Blog*/
   .Blog {
