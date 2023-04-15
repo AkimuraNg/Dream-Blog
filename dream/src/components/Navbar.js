@@ -19,13 +19,13 @@ const Navbar = () => {
                         </div>
                         <div className="offcanvas-body">
                             <ul className="navbar-nav justify-content-center flex-grow-1 pe-3">
-                                <li className="nav-item">
-                                    <Link className="nav-link active" to="/">Home</Link>
+                                <li className="nav-item" data-bs-dismiss="offcanvas"> 
+                                    <Link className="nav-link active"  to="/">Home</Link>
                                 </li>
-                                <li className="nav-item">
+                                <li className="nav-item" data-bs-dismiss="offcanvas">
                                     <Link className="nav-link active" to="/blogs">Stories</Link>
                                 </li>
-                                <li className="nav-item">
+                                <li className="nav-item" data-bs-dismiss="offcanvas">
                                     <Link className="nav-link active" to="/create">Compose</Link>
                                 </li>
                             </ul>

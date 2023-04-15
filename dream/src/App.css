@@ -244,10 +244,11 @@ button:active {
 .blog-preview {
   border: 2px solid #D4A017;
   border-radius: 8px;
-  padding: 10px 16px;
+  padding: 16px 12px;
   margin: 20px 12px;
   cursor: pointer;
   width: 24rem;
+  height: 12rem;
   text-align: center;
 }
 
@@ -404,6 +405,7 @@ button:active {
 
   .blog-preview {
     width: 18rem;
+    height: unset;
     margin: 20px 6px;
   }
 
