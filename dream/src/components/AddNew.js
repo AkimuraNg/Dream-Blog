@@ -22,14 +22,14 @@ const AddNew = () => {
     }).then(()=>{
       console.log('Added');
       setIsPending(false)
-      navigate('/stories')
+      navigate('/blogs')
     })
   }
 
   return (
     <div className="container-fluid">
       <main className="wrapper create">
-        <h1>Create your new story</h1>
+        <h1>Create New Stories</h1>
         <form className="add-form" onSubmit={handleSubmit}>
           <label>Blog Title</label>
           <input type="text" required value={title} onChange={(e) => setTitle(e.target.value)}></input>
