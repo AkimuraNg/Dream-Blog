@@ -20,7 +20,7 @@ const Home = () => {
           <div className="row">
             <div className="col-6">
               <div className="content">
-                <h1>Dream Blogs</h1>
+                <h1>Dream Blog</h1>
                 <h2>Compose Your Own Stories</h2>
                 <h5>Express your imagination, your dream, and your experiences.</h5>
               </div>
