@@ -14,12 +14,16 @@ The website is currently provides users with:
 ## Website UI
 will be added later
 
-## Development Language and ;Libraries
+## Development Language and Libraries
 The website is developed with:
 * ReactJs.
 * Bootstrap v5.2.
 * Json-server.
 * React-router-dom.
+
+## Deployment Services
+* Netlify: website frontend (https://dream-blogs.netlify.app/).
+* Glitch: website backend (https://glitch.com/edit/#!/supreme-spangle-savory?path=db.json%3A1%3A0).
 
 ## Author:
 The owner of this project is: 
