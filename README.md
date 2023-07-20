@@ -12,7 +12,14 @@ The website is currently provides users with:
 * Keep users anonymous. Users are not asked to give their name as we want to keep them secret.
 
 ## Website UI
-will be added later
+![Home Page](https://github.com/AkimuraNg/Dream-Blog/blob/main/uid-img/Home-page-1.png)
+![Home Page](https://github.com/AkimuraNg/Dream-Blog/blob/main/uid-img/Home-page-2.png)
+![Home Page](https://github.com/AkimuraNg/Dream-Blog/blob/main/uid-img/Home-page-3.png)
+![Stories Zone](https://github.com/AkimuraNg/Dream-Blog/blob/main/uid-img/stories-zone-page.png)
+![Add New Story Page](https://github.com/AkimuraNg/Dream-Blog/blob/main/uid-img/Add-story-page.png)
+![Home Page Mobile](https://github.com/AkimuraNg/Dream-Blog/blob/main/uid-img/Home-mobile-responsive.png)
+![Stories Zone Page Mobile](https://github.com/AkimuraNg/Dream-Blog/blob/main/uid-img/Stories-zone-mobile-resp.png)
+![Add New Story Page Mobile](https://github.com/AkimuraNg/Dream-Blog/blob/main/uid-img/Add-story-mobile-resp.png)
 
 ## Development Language and Libraries
 The website is developed with:
